@@ -12,7 +12,7 @@ fetch(jsonUrl)
     console.log(data.activites);
 
    // 2. Récuperer les éléments DOM 
-    const main = document.getElementById("escapeGame")
+    // const main = document.getElementById("escapeGame")
 
     const logo = document.getElementById("logoNav");
     const heroContainer = document.getElementById("heroSection");
@@ -25,17 +25,24 @@ fetch(jsonUrl)
     // 3. création élément section héro
         // - button CTA
 
+    const div1 = document.createElement("div");
     const phraseAccroche = document.createElement("h1");
     phraseAccroche.textContent= data.phraseAccroche;
-
     // test
     console.log(phraseAccroche);
-    
+
+    div1.appendChild(phraseAccroche);
+
+
+    const div2 = document.createElement("div");
     const btnCTA = document.createElement("button");
     btnCTA.textContent = data.texteAppelAction;
 
-    heroContainer.appendChild(phraseAccroche);
-    heroContainer.appendChild(btnCTA);  
+    div2.appendChild(btnCTA);
+
+
+    heroContainer.appendChild(div1);
+    heroContainer.appendChild(div2);  
     
 
     // création éléments section avantages
@@ -47,6 +54,7 @@ fetch(jsonUrl)
 
     data.avantagesClients.forEach(avantage => {
         const div = document.createElement("div");
+        div.className = "cardAvantages";
     
         i++;
 
@@ -71,6 +79,7 @@ fetch(jsonUrl)
 
     data.activites.forEach(activity => {
         const div = document.createElement("div");
+        div.className = "cardActivity";
 
         const activityImage = document.createElement("img");
         activityImage.src = activity["image-url"];
@@ -104,6 +113,7 @@ fetch(jsonUrl)
 
     data.temoignages.forEach(review => {
         const div = document.createElement("div");
+        div.className="cardReview";
 
         const activityType = document.createElement("h3");
         activityType.textContent = review.typeExperience ;

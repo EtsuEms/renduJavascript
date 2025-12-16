@@ -2,6 +2,7 @@ body{
     margin: 0;
 }
 
+
 .sectionPadding{
     padding-block: 64px;
 }
@@ -10,3 +11,111 @@ body{
     margin: auto;
     max-width: 1060px;
 }
+
+
+nav {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    div{
+        display: flex;
+        gap: 15px;
+    }
+    
+}
+
+.button{
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 20px;
+    width: 90px;
+}
+
+#heroSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+#avantagesSection{
+    .container{
+        p{
+            text-align: center;
+        }
+    }
+}
+
+
+#containerAvantages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardAvantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 231px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------- SECTION ACTIVITE ----------------------------------------------- */
+#containerActivity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardActivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    img{
+        width: 300px;
+        height: 350px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+/* -----------------------------------SECTION TEMOIGNAGES-------------------------------------------- */
+#containerReview{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 231px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
