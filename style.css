@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+.sectionPadding{
+    padding-block: 64px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1060px;
+}

@@ -4,50 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <p id ="logoNav"></p>
+            <p id="logoNav"></p>
 
             <a href="">Accueil</a>
             <a href="">Avantages</a>
             <a href="">Activités</a>
             <a href="">Temoignages</a>
+
+            <a href="">Appeler</a>
         </nav>
     </header>
 
 
-
     <main id="escapeGame">
-        <section class="hero">
-            <div id="heroSection">
-
-            </div>
-
+        <section class="hero sectionPadding">
+            <div id="heroSection"></div>
         </section>
 
-        <section id="avantagesSection">
+        <section id="avantagesSection" class="sectionPadding">
             <h2>AVANTAGES</h2>
             <p>Pourqoui nous choisir?</p>
-
+            
+            <!-- div cartes avantage crées en JS -->
+            <div id="containerAvantages"></div> 
+            
         </section>
 
-        <section id="activitySection">
+        <section id="activitySection" class="sectionPadding">
             <h2>NOS ACTIVITES</h2>
+
+             <!-- div cartes activités crées en JS -->
+            <div id="containerActivity"></div>
+
         </section>
 
-        <section id="temoignagesSection">
+        <section id="temoignagesSection" class="sectionPadding">
             <h2>TEMOIGNAGES</h2>
             <p>Les avis de nos clients</p>
+
+             <!-- div cartes activités crées en JS -->
+            <div id="containerReview"></div>
         </section>
     </main>
 
 
+    <footer class="sectionPadding">
 
-    <footer>
+        <div id="footerContentContainer">
+            <div id="footerContent1">
+                <p id="logoNav"></p>
+                <div id="logoFooter">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
 
+            <div id="footerContent2">
+                <a href="">Accueil</a>
+                <a href="">Avantages</a>
+                <a href="">Activités</a>
+                <a href="">Temoignages</a>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p>© 2025 Dashboard Navigation. Tout droits réservés</p>
+            </div>
+
+            <div>
+                <a href="">Politique de confidentialité</a>
+                <a href="">Conditions d'utilisation</a>
+                <a href="">Paramètres de cookies</a>
+            </div>
+        </div>
+
+        
+        
     </footer>
 
 
