@@ -2,11 +2,16 @@
 
 body{
     margin: 0;
-    background-color: rgb(176 12 12);
+    background-color: rgb(0, 8, 15);
 }
 
 .sectionPadding{
     padding-block: 64px;
+    border-top: 1px white;
+}
+
+.sectionBackground{
+    background-color:  rgb(0, 8, 15);
 }
 
 .container{
@@ -22,19 +27,21 @@ body{
 .button{
     text-align: center;
     color: white;
-    background-color: rgb(0, 8, 15);
+    background-color: rgb(176 12 12);
     text-decoration: none;
     font-size: 17px;
-    padding: 20px;
-    margin-bottom: 15px;
+    padding: 15px;
+    /* margin-bottom: 15px; */
     width: 90px;
-    border-radius: 25px;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: rgb(248, 245, 245);
+    color: black;
 }
 /* bouton CTA */
 .CTA {
-    color: white;
-    background-color: rgb(176 12 12);
-    width : 160px;
+    width: 224px;
 }
 
 h1{
@@ -52,9 +59,10 @@ h2{
 /* =========================================== HEADER =========================================== */
 
 nav {
-    padding-top: 15px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     a{
         text-decoration: none;
@@ -68,9 +76,7 @@ nav {
     
 }
 
-.sectionBackground{
-    background-color:  rgb(0, 8, 15);
-}
+
 
 #heroSection{
     display: flex;
@@ -79,6 +85,8 @@ nav {
     justify-content: center;
     width: 900px;
     padding-left: 84px;
+    font-size: 90px;
+    font-size: 53px;
 
     /* button{
         color: rgb(0, 8, 15);
@@ -92,17 +100,27 @@ nav {
 /* =========================================== SECTION AVANTAGE =========================================== */
 
 #avantagesSection{
+    /* background-color: rgb(243, 240, 240); */
+
+    
     .container{
+        /* *{
+            color: black;
+        } */
         p{
             text-align: center;
+            
         }
     }
 }
 
 #containerAvantages{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 30px;
+    justify-content: center;
 }
+
 
 .cardAvantages {
     display: flex;
@@ -111,6 +129,13 @@ nav {
     flex-wrap: wrap;
     text-align: center;
     width: 231px;
+    padding: 10px;
+    background-color: #fffdfd;
+    
+    border-radius: 5px;
+    *{
+        color: black;
+    }
 }
 
 /* ======================================================================================================================== */
@@ -121,8 +146,8 @@ nav {
 
 #containerActivity{
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    justify-content: center;
+    gap: 55px;
 }
 
 .cardActivity {
@@ -131,11 +156,24 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    background-color: #e2141499;
+    padding: 10px;
+    border-radius: 10px;
+    
 
     img{
         width: 300px;
         height: 350px;
+        /* border-radius: 10px 10px 0px 0px; */
     }
+}
+
+.cardActivity:hover{
+    background-color: rgb(249, 249, 249);
+    *{
+        color: black;
+    }
+    
 }
 
 /* ======================================================================================================================== */
@@ -144,9 +182,14 @@ nav {
 
 /* =========================================== SECTION TEMOIGNAGES =========================================== */
 
+/* #temoignagesSection{
+    background-color: rgb(243, 240, 240);
+    color: black;
+} */
 #containerReview{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 55px;
 }
 
 .cardReview {
@@ -157,6 +200,48 @@ nav {
     text-align: center;
     width: 231px;
     border: 1px;
+    padding: 10px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    *{  
+        color: black;
+    }
 }
+
+.temoignage{
+    font-style: italic;
+}
+
+/* ======================================================================================================================== */
+
+
+
+/* =========================================== FOOTER =========================================== */
+#footerContentContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footerContent2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+#footerContent3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 30px;
+}
+ #footerLinks{
+    display: flex;
+    gap: 10px;
+ }
 
 /* ======================================================================================================================== */

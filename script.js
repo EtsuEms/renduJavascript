@@ -116,12 +116,14 @@ fetch(jsonUrl)
         const div = document.createElement("div");
         div.className="cardReview";
 
-        const activityType = document.createElement("h3");
-        activityType.textContent = review.typeExperience ;
-
         const note = document.createElement("p");
         note.textContent = `Note: ${review.note}/5 `;
+        
 
+
+        const activityType = document.createElement("h3");
+        activityType.textContent = review.typeExperience ;
+        
         const commentaire = document.createElement("p");
         commentaire.textContent = review.commentaire ;
 
@@ -129,8 +131,8 @@ fetch(jsonUrl)
         prenom.textContent = review.prenom ;
 
         
-        div.appendChild(activityType);
         div.appendChild(note);
+        div.appendChild(activityType);
         div.appendChild(commentaire);
         div.appendChild(prenom);
 
@@ -140,15 +142,15 @@ fetch(jsonUrl)
 });
 
 
-document.body.addEventListener('mouseover', e => {
-  let button = e.target.closest('button');
-  if (!button) { return; }
-  button.style.backgroundColor = 'orange';
-});
+// document.body.addEventListener('mouseover', e => {
+//   let button = e.target.closest('button');
+//   if (!button) { return; }
+//   button.style.backgroundColor = 'white';
+// });
 
-document.body.addEventListener('mouseout', e => {
-  let button = e.target.closest('button');
-  if (!button) { return; }
-  button.style.backgroundColor = '';
-});
+// document.body.addEventListener('mouseout', e => {
+//   let button = e.target.closest('button');
+//   if (!button) { return; }
+//   button.style.backgroundColor = '';
+// });
 
