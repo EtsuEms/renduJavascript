@@ -37,6 +37,7 @@ fetch(jsonUrl)
     const div2 = document.createElement("div");
     const btnCTA = document.createElement("button");
     btnCTA.textContent = data.texteAppelAction;
+    btnCTA.className= "button CTA";
 
     div2.appendChild(btnCTA);
 

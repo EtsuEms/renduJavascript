@@ -1,7 +1,9 @@
+/* =========================================== GENERAL CSS =========================================== */
+
 body{
     margin: 0;
+    background-color: rgb(176 12 12);
 }
-
 
 .sectionPadding{
     padding-block: 64px;
@@ -12,40 +14,27 @@ body{
     max-width: 1060px;
 }
 
-
-nav {
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
-
-    div{
-        display: flex;
-        gap: 15px;
-    }
-    
+*{
+    color:  rgb(249, 249, 249);
+    font-family: "Roboto", sans-serif;
 }
 
 .button{
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 8, 15);
     text-decoration: none;
     font-size: 17px;
     padding: 20px;
+    margin-bottom: 15px;
     width: 90px;
+    border-radius: 25px;
 }
-
-#heroSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 900px;
+/* bouton CTA */
+.CTA {
+    color: white;
+    background-color: rgb(176 12 12);
+    width : 160px;
 }
 
 h1{
@@ -56,7 +45,52 @@ h2{
     text-align: center;
 }
 
-/* ------------------------------------------------------------------------------------------------------------- */
+/* ======================================================================================================================== */
+
+
+
+/* =========================================== HEADER =========================================== */
+
+nav {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color: rgb(249, 249, 249);
+    }
+
+    div{
+        display: flex;
+        gap: 15px;
+    }
+    
+}
+
+.sectionBackground{
+    background-color:  rgb(0, 8, 15);
+}
+
+#heroSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    padding-left: 84px;
+
+    /* button{
+        color: rgb(0, 8, 15);
+    } */
+}
+
+/* ======================================================================================================================== */
+
+
+
+/* =========================================== SECTION AVANTAGE =========================================== */
+
 #avantagesSection{
     .container{
         p{
@@ -64,7 +98,6 @@ h2{
         }
     }
 }
-
 
 #containerAvantages{
     display: flex;
@@ -79,14 +112,17 @@ h2{
     text-align: center;
     width: 231px;
 }
-/* ------------------------------------------------------------------------------------------------------------- */
+
+/* ======================================================================================================================== */
 
 
 
-/* ------------------------------- SECTION ACTIVITE ----------------------------------------------- */
+/* =========================================== SECTION ACTIVITES =========================================== */
+
 #containerActivity{
     display: flex;
     justify-content: space-between;
+    gap: 60px;
 }
 
 .cardActivity {
@@ -101,10 +137,13 @@ h2{
         height: 350px;
     }
 }
-/* ------------------------------------------------------------------------------------------------------------- */
+
+/* ======================================================================================================================== */
 
 
-/* -----------------------------------SECTION TEMOIGNAGES-------------------------------------------- */
+
+/* =========================================== SECTION TEMOIGNAGES =========================================== */
+
 #containerReview{
     display: flex;
     justify-content: space-between;
@@ -118,4 +157,5 @@ h2{
     text-align: center;
     width: 231px;
 }
-/* ------------------------------------------------------------------------------------------------------------- */
+
+/* ======================================================================================================================== */
